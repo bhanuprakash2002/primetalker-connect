@@ -91,9 +91,14 @@ localStorage.setItem("username", data.user.user_metadata?.full_name || data.user
     <div className="min-h-screen bg-gradient-hero flex items-center justify-center p-4">
       <Card className="w-full max-w-md shadow-primary">
         <CardHeader className="text-center space-y-4">
-          <div className="w-16 h-16 mx-auto rounded-xl bg-gradient-primary flex items-center justify-center">
-            <Globe className="w-10 h-10 text-primary-foreground" />
+          <div className="flex justify-center mb-4">
+            <img
+            src="/logo.png"
+            alt="PrimeTalker Logo"
+            className="w-40 h-auto object-contain cursor-pointer select-none"
+          />
           </div>
+
 
           <CardTitle className="text-3xl font-bold">
             {isSignUp ? "Create Account" : "Welcome Back"}
